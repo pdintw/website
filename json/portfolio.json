@@ -1,0 +1,53 @@
+{
+  "portfolio":[
+    {
+      "title" : "DRPP Simulator",
+      "date"  : "June, 2015",
+      "quote" : "Build in Java",
+      "img"   : "DRPP_thumb.gif",
+      "intro" : "DRPP is an acronym of Delegation-based Roaming Payment Protocol. With JPBC Library, this simulator is able to compute the excution time of each step of our protocol. Monitor tab shows the value of variables to make sure that everything is gnerated properly."
+    },{
+      "title" : "Jewels",
+      "date"  : "February, 2011",
+      "quote" : "Build in Android 2.2",
+      "img"   : "jewels_thumb.gif",
+      "intro" : "This is my undergraduate final project. In our department, final project is started from the 2nd semeter of sophomore to 1st semester of junior. We used Android to build a match-three puzzle game because Android was very popular then."
+    },{
+      "title" : "Rabin Simulator",
+      "date"  : "January, 2014",
+      "quote" : "Build in Java",
+      "img"   : "rabin_thumb.gif",
+      "intro" : "This program adopts Miller-Rabin algorithm to generate a large prime and encrypt the input message with Rabin. Since we will get 4 output messages in decryptioncan, use Jacobi symbol to find out which one is plain text."
+    },{
+      "title" : "K-means Demo",
+      "date"  : "January, 2014",
+      "quote" : "Build in Java",
+      "img"   : "kmeans_thumb.gif",
+      "intro" : "Use animation to simulate the process of K-means algorithm. Change the time interval to adjust animation delay which allows you to slow down the process."
+    },{
+      "title" : "Roboter",
+      "date"  : "October, 2014",
+      "quote" : "Build in Java",
+      "img"   : "roboter_thumb.gif",
+      "intro" : "We usually have to check out hundreds of homeworks or projects while being teacher assistant. So I wrote a program to compile, verify, and score students' C++ files automatically. Multi-thread is involved in case someone's program crashes."
+    },{
+      "title" : "Watch Dog",
+      "date"  : "October, 2014",
+      "quote" : "Build in Java",
+      "img"   : "watchdog_thumb.gif",
+      "intro" : "Automatically compare the students' source codes by using bag-of-words model. Adjust the similarity to get better results. <q>Best performance is at around 80%</q>"
+    },{
+      "title" : "Stock Monitor",
+      "date"  : "Around 2012",
+      "quote" : "Build in Java",
+      "img"   : "stock_thumb.gif",
+      "intro" : "One day, my friend's father ask me if I can write a stock monitor with some mistery formula invented by him, and that is what you see here. <q>The data model in this program is just an example, not real.</q>"
+    },{
+      "title" : "Small World",
+      "date"  : "February, 2015",
+      "quote" : "Build in Java",
+      "img"   : "small_thumb.gif",
+      "intro" : "I wrote this program to practice physics simulation and collision detection in Java. Just for fun. You can draw your own map and jump everywhere."
+    }
+  ]
+}

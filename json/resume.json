@@ -1,0 +1,56 @@
+{
+  "resume":[
+    {
+      "category":"Education",
+      "data":[
+        {
+          "node":"National Chiayi University<br />Master of CSIE<br /><span>2013 - 2015</span>",
+          "img":"ncyu.jpg"
+        },{
+          "node":"National Chiayi University<br />Bachelor of CSIE<br /><span>2008 - 2013</span>",
+          "img":"ncyu.jpg"
+        },{
+          "node":"National Pingtung Senior High School<br /><span>2005 - 2008</span>",
+          "img":"pths.jpg"
+        }
+      ]
+    },{
+      "category":"Skills",
+      "data":[
+        {"node":"C++, C, Java, Android, Visual Basic, C#"},
+        {"node":"PHP, CSS, JavaScript, AJAX, jQuery, MySQL"},
+        {"node":"Python, Pearl, Ruby"},
+        {"node":"Assembly Language"},
+        {"node":"Adobe Flash Action Script"}
+      ]
+    },{
+      "category":"Projects",
+      "data":[
+        {"node":"Cloud Service with XenServer and CloudStack"},
+        {"node":"Intrusion Detection System with MulVAL"},
+        {"node":"Android Mobile Game development"},
+        {"node":"Linux website hosting"}
+      ]
+    },{
+      "category":"Papers",
+      "data":[
+        {"node":"C. H. Wang and H. C. Sung, &quot;Delegation-Based Roaming Payment Protocol with Location and Purchasing Privacy Protection,&quot; in Proc. The 10th Asia Joint Conference on Information Security (AsiaJCIS), April 2015. <span>(IEEE CPS)</span>"},
+        {"node":"C. H. Wang, H. C. Sung, Y. C. Chiu, J. M. Yang and Y. H. Chen, &quot;兩類型入侵偵測攻擊圖與警報關聯配對之研究,&quot; Chinese Cryptology and Information Security Association (CCISA), Vol. 20, No.4, pp.41-53, October 2014."}
+      ]
+    },{
+      "category":"Activities",
+      "data":[
+        {"node":"President of CSIE Student Council"},
+        {"node":"Chief Coordinator of CSIE Orientation Camp"},
+        {"node":"CSIE Coordinator of CSE Chorus Competition"}
+      ]
+    },{
+      "category":"Experience",
+      "data":[
+        {"node":"Research Assistant in the project of Ministry of Science and Technology"},
+        {"node":"Assistant Editor of Chinese Cryptology and Information Security Association (CCISA)"},
+        {"node":"TA in Object-Oriented Programming Design, Computer Architecture, Windows Programming Design, and Data Structure"}
+      ]
+    }
+  ]
+}

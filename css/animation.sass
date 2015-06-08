@@ -1,0 +1,56 @@
+=animation($string)
+    -webkit-animation: #{$string}
+    -moz-animation: #{$string}
+    -ms-animation: #{$string}
+    -o-animation: #{$string}
+    animation: #{$string}
+
+=animation-delay($time)
+    -webkit-animation-delay: $time
+    -moz-animation-delay: $time
+    -ms-animation-delay: $time
+    -o-animation-delay: $time
+    animation-delay: $time
+
+=animation-duration($time)
+    -webkit-animation-duration: $time
+    -moz-animation-duration: $time
+    -ms-animation-duration: $time
+    -o-animation-duration: $time
+    animation-duration: $time   
+
+=transition($time)
+    -webkit-transition: $time
+    -moz-transition: $time
+    -ms-transition: $time
+    -o-transition: $time
+    transition: $time
+
+=keyframes($name)
+    @-webkit-keyframes #{$name}
+        @content
+    @-moz-keyframes #{$name}
+        @content
+    @-ms-keyframes #{$name}
+        @content
+    @-o-keyframes #{$name}
+        @content
+    @keyframes #{$name}
+        @content
+
++keyframes(fadeIn)
+    0%
+        color: rgba(0,0,0,0)
+
++keyframes(welcome)
+    0%
+        margin-top: 0
+        opacity: 0
+
++keyframes(p-in)
+    0%
+        margin-top: -300px
+        opacity: 0
+    55%
+        margin-top: -230px
+        opacity: 0

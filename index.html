@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta name="fragment" content="!">
+  <meta http-equiv="Content-Type" content="text/html" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=1" />
+
+  <title>PDIN</title>
+
+  <!-- css -->
+  <link href="/css/style.css" rel="stylesheet" />
+
+  <!--
+    .js files are here
+    see more about Adobe Typekit at https://typekit.com
+  -->
+  <script src="/js/core.js"></script>
+  <script src="/js/typekit.js" async></script>
+
+  <link rel="shortcut icon" href="/img/favicon.png" />
+
+  <!-- prefetch -->
+  <link rel="prefetch" href="/img/icon.png" />
+  <link rel="prefetch" href="/img/portfolio/DRPP.gif" />
+  <link rel="prefetch" href="/img/portfolio/jewels.gif" />
+  <link rel="prefetch" href="/img/portfolio/kmeans.gif" />
+  <link rel="prefetch" href="/img/portfolio/rabin.gif" />
+  <link rel="prefetch" href="/img/portfolio/roboter.gif" />
+  <link rel="prefetch" href="/img/portfolio/small.gif" />
+  <link rel="prefetch" href="/img/portfolio/stock.gif" />
+  <link rel="prefetch" href="/img/portfolio/watchdog.gif" />
+
+  <link rel="prefetch" href="/json/resume.json" />
+  <link rel="prefetch" href="/json/portfolio.json" />
+  <link rel="prefetch" href="/json/links.json" />
+
+
+</head>
+
+<body>
+
+<div id="progressbar"></div>
+
+<div class="menu">
+  <a href="/" onclick="load('.');return false"><img class="icon" src="/img/icon.png" alt="Icon" /></a>
+  <div class="left">
+    <a class="link" href="/resume" onclick="load('resume');return false;">Resume</a>
+    <a class="link" href="/papers" onclick="load('papers');return false">Papers</a>
+  </div>
+  <div class="right">
+    <a class="link" href="/portfolio" onclick="load('portfolio');return false">Portfolio</a>
+    <a class="link" href="/links" onclick="load('links');return false">Links</a>
+  </div>
+  <div class="clear"></div>
+</div>
+
+<div id="container">
+  <div id="content" class="block"></div>
+</div>
+
+</body></html>

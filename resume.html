@@ -1,0 +1,108 @@
+<script>
+var json;
+handle("/json/resume.json",function(file){
+  output(file);
+});
+
+function output(file){
+  var html = '<div class="left">';
+  var json = JSON.parse(file);
+
+  for(var i in json.resume){
+    var row = json.resume[i];
+
+    if(i==3) html += '</div><div class="right">';
+
+    // print title
+    html += "<table><tr>";
+    html += '<td><img src="/img/resume/'+row.category+'.png" ';
+    html += 'alt="'+row.category+'" /></td>';
+    html += '<td class="title">'+row.category+'</td>';
+    html += '</tr></table>';
+
+    // print content
+    html += '<div class="small_block"><table>';
+    for(var j in row.data){
+      if(row.category=="Education"){
+        html += '<tr><td><div class="point"></div></td>';
+        html += '<td><img src="/img/resume/'+row.data[j].img+'" ';
+        html += 'alt="'+row.data[j].img+'" />&nbsp&nbsp</td>';
+        html += '<td style="text-align:left;">'+row.data[j].node+'</td></tr>';
+      }else{
+        html += '<tr><td class="top_align"><div class="point"></div></td>';
+        html += '<td>'+row.data[j].node+'</td></tr>';
+      }
+    }
+    html += '</table></div>';
+
+    if(i==5) html += '</div><div class="clear"></div>';
+  }document.getElementById("posthere").innerHTML = html;
+}
+</script>
+
+<style scoped="scoped">
+  p{
+    margin: 0;
+    padding-left: 7px;
+    line-height: 1.3em;
+  }
+  table{
+    border-spacing: 1px 12px;
+    font-size: 13pt;
+    line-height: 1.6em;
+  }
+  td.top_align{
+    padding-top: 10px;
+    vertical-align:top;
+  }
+  span{
+    font-size: 10pt;
+    color: #EB0;
+  }
+  .small_block{
+    margin-left: 17px;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-left: dotted 1px #AAA;
+  }
+  .small_block table{
+    margin-left: -8px;
+  }
+  .point{
+    margin-left: 1px;
+    margin-right: 20px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #AAA;
+  }
+  td.title{
+    padding-left: 15px;
+    font-size: 15pt;
+    font-weight: 600;
+    color: #555;
+  }
+  .head .left{text-align: right;}
+  img{max-width: none; max-height: none;}
+  @media only screen and (max-width: 680px){
+    .head .left{text-align: center;}
+    .head .right{text-align: center;}
+  }
+</style>
+
+<h1>Resume</h1>
+<div class="head">
+  <div class="left">
+    <img src="/img/tmp.png" alt="Profile Picture">
+  </div>
+  <div class="right">
+    Hsiao Chien Sung<br />
+    October 9, 1989<br />
+    Pingtung County, Taiwan<br />
+    &#109;&#97;&#105;&#108;&#64;&#112;&#100;&#105;&#110;&#46;&#116;&#119;<br />
+  </div>
+  <div class="clear"></div>
+</div>
+
+<div id="posthere"></div>
+<h4>May . 7 . 2015</h4>

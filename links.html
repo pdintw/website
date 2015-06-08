@@ -1,0 +1,43 @@
+<script>
+var json;
+handle("/json/links.json",function(file){
+  output(file);
+});
+
+function output(file){
+  var html = "";
+  var json = JSON.parse(file);
+  for(var i in json.links){
+    var row = json.links[i];
+    html += '<div class="link" onClick="window.open(\'http://' + row.href + '\')">';
+      html += '<div class="left">' + row.name + '</div>';
+      html += '<div class="right">' + row.href + '</div>';
+      html += '<div class="clear"></div>';
+    html += '</div>';
+  }document.getElementById("posthere").innerHTML = html;
+}
+</script>
+
+<style scoped="scoped">
+  div.link{
+    margin: 0 20px;
+    background:rgb(240,240,240);
+    padding:0 30px;
+    border-radius: 20px;
+  }
+  div.link:hover{
+    background:rgb(255,255,230);
+    cursor: pointer;
+  }
+  .link .right{
+    font-size: 12pt;
+    color: #000;
+  }
+  @media only screen and (max-width: 700px){
+    .link .left{margin-bottom: -15px;}
+  }
+</style>
+
+<h1>Links</h1>
+
+<div id="posthere"></div>

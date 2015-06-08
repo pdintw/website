@@ -1,0 +1,44 @@
+<script>
+var json;
+handle("/json/portfolio.json",function(file){
+  output(file);
+});
+
+// output resume
+function output(file){
+  var html = "";
+  var json = JSON.parse(file);
+  for(var i in json.portfolio){
+    var row = json.portfolio[i];
+    html += "<hr />";
+    html += "<h2>"+row.title+"</h2>";
+    if(row.title!="Rabin Simulator"){
+      html += '<div class="left">';
+    }
+    html += '<span><img id="demo" src="/img/portfolio/' + row.img;
+    html += '" alt="' + row.title + '" /></span>';
+    if(row.title!="Rabin Simulator"){
+      html += '</div><div class="right">';
+    }
+    html += '<h3>' + row.date  + '</h3>';
+    html += '<q>'  + row.quote + '</q>';
+    html += '<p>'  + row.intro + '</p>';
+    if(row.title!="Rabin Simulator"){
+      html += '</div><div class="clear"></div>';
+    }
+  }document.getElementById("posthere").innerHTML = html;
+}
+document.addEventListener("scroll", startAnimation);
+</script>
+
+<style scoped="scoped">
+  span{display: block;text-align: center;}
+  .left{text-align: center}
+</style>
+
+<h1>Portfolio</h1>
+
+<h2>Notification</h2>
+<p>The pictures below are screenshots of my programs which are only for personal use. Please contact me if there is any copyright infringement and I will remove the related content immediately.</p>
+
+<div id="posthere"></div>
