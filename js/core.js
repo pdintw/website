@@ -2,7 +2,6 @@ var req = createRequest();
 
 // GIF animation of my portfolio
 var animation = [
-  "icon",
   "DRPP.gif",
   "jewels.gif",
   "rabin.gif",
@@ -15,7 +14,6 @@ var animation = [
 
 // my portfolio thumbnails 
 var thumb = [
-  "icon",
   "DRPP_thumb.gif",
   "jewels_thumb.gif",
   "rabin_thumb.gif",
@@ -34,7 +32,7 @@ window.onpopstate = function(e){
 
 window.onpushstate = function(e){
   // reload the page according to its url
-  if(e.state) console.log(e.state.url);//load(e.state.url,"no history");
+  if(e.state) load(e.state.url,"no history");
 };
 
 window.addEventListener("scroll", focus);
@@ -100,8 +98,8 @@ function focus(){
 
 // start GIF animation if the thumbnail is in active region
 function startAnimation(){
-  var img  = document.getElementsByTagName("img");
-  for(var i=1;i<img.length;i++){
+  var img  = document.getElementsByClassName("demo");
+  for(var i=0;i<img.length;i++){
     if(shown(img[i])){
       if(!equal(img[i],animation[i])){
         img[i].src = "/img/portfolio/" + animation[i];
@@ -152,7 +150,6 @@ function hashchange(){
 
 // load contents according to the target. ajax can't work properly without this function.
 function load(target,popstate){
-  console.log(target);
   var url = window.location.href;
   var valid = false;
   var list = ["Welcome","Papers","Resume","Portfolio","Links"];
@@ -172,7 +169,7 @@ function load(target,popstate){
     for(var i=0;i<list.length;i++){
       if(target==list[i].toLowerCase()){
         if(!popstate) history.pushState({url:target},"",target);
-        document.title = list[i];
+        document.title = "PDIN - "+list[i];
         valid = true;
       }
     }
