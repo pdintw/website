@@ -1,13 +1,34 @@
 {
   "links":[
     {
+      "name":"Code School",
+      "href":"www.codeschool.com"
+    },
+    {
+      "name":"codecademy",
+      "href":"www.codecademy.com"
+    },
+    {
+      "name":"tuts+",
+      "href":"webdesign.tutsplus.com"
+    },
+    {
+      "name":"SMASHING MAGAZINE",
+      "href":"www.smashingmagazine.com"
+    },
+    {
+      "name":"Shay Howe",
+      "href":"learn.shayhowe.com"
+    },
+    {
+      "name":"learnlayout",
+      "href":"learnlayout.com"
+    },
+    {
       "name":"A List Apart",
       "href":"alistapart.com"
     },
     {
-      "name":"MOZ",
-      "href":"moz.com"
-    },{
       "name":"vogella",
       "href":"www.vogella.com"
     },{
