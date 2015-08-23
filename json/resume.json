@@ -18,23 +18,21 @@
       "category":"Skills",
       "data":[
         {"node":"C++, C, Java, Android, Visual Basic, C#"},
-        {"node":"PHP, CSS, JavaScript, AJAX, jQuery, MySQL"},
-        {"node":"Python, Pearl, Ruby"},
-        {"node":"Assembly Language"},
-        {"node":"Adobe Flash Action Script"}
+        {"node":"PHP, JavaScript, AJAX, jQuery, MySQL"},
+        {"node":"Linux website hosting"},
+        {"node":"Cloud Service with XenServer and CloudStack"}
       ]
     },{
       "category":"Projects",
       "data":[
-        {"node":"Cloud Service with XenServer and CloudStack"},
+        {"node":"Delegation-based Roaming Payment Protocol"},
         {"node":"Intrusion Detection System with MulVAL"},
-        {"node":"Android Mobile Game development"},
-        {"node":"Linux website hosting"}
+        {"node":"Android Mobile Game development"}
       ]
     },{
       "category":"Papers",
       "data":[
-        {"node":"C. H. Wang and H. C. Sung, &quot;Delegation-Based Roaming Payment Protocol with Location and Purchasing Privacy Protection,&quot; in Proc. The 10th Asia Joint Conference on Information Security (AsiaJCIS), April 2015. <span>(IEEE CPS)</span>"},
+        {"node":"C. H. Wang and H. C. Sung, &quot;Delegation-Based Roaming Payment Protocol with Location and Purchasing Privacy Protection,&quot; in Proc. The 10th Asia Joint Conference on Information Security (AsiaJCIS), pp.97-103, May 2015. <span>(IEEE CPS)</span>"},
         {"node":"C. H. Wang, H. C. Sung, Y. C. Chiu, J. M. Yang and Y. H. Chen, &quot;兩類型入侵偵測攻擊圖與警報關聯配對之研究,&quot; Chinese Cryptology and Information Security Association (CCISA), Vol. 20, No.4, pp.41-53, October 2014."}
       ]
     },{

@@ -90,7 +90,7 @@ function focus(){
   for(var i=0;i<obj.length;i++){
     if(obj[i]){
       if(shown(obj[i])){
-        obj[i].style.color = "#C30";
+        obj[i].style.color = "#E30";
       }else obj[i].style.color = "";
     }
   }
